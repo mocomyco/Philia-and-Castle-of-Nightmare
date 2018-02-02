@@ -83,6 +83,8 @@
   <ItemGroup>
     <Compile Include="Assets\0_éóéτé╚éóÄq\Hp\Hp.cs" />
     <Compile Include="Assets\19\fogAnim.cs" />
+    <Compile Include="Assets\AttackRange\AttackRangeMove.cs" />
+    <Compile Include="Assets\AttackRange\AttackRangeUI.cs" />
     <Compile Include="Assets\JMO Assets\Toony Colors\Demo 2.0\TCF_Demo.cs" />
     <Compile Include="Assets\NewClearScene\GameClear.cs" />
     <Compile Include="Assets\NewClearScene\GameData.cs" />
@@ -129,6 +131,8 @@
     <Compile Include="Assets\Result.cs" />
     <Compile Include="Assets\Scene\AnimationFrameWork.cs" />
     <Compile Include="Assets\Scene\sceneChange.cs" />
+    <Compile Include="Assets\Score\ResultMove.cs" />
+    <Compile Include="Assets\Score\Score.cs" />
     <Compile Include="Assets\Shadow\ShadowMove.cs" />
     <Compile Include="Assets\Sound\SE\new\Emergency.cs" />
     <Compile Include="Assets\Sound\SE\new\PizaconCarsol.cs" />

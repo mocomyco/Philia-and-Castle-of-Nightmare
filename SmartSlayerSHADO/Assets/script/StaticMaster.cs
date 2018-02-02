@@ -2,7 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class StaticMaster : MonoBehaviour {
+public class StaticMaster : MonoBehaviour
+{
     static public int Board_x;
     static public int Board_z;
 
@@ -47,14 +48,18 @@ public class StaticMaster : MonoBehaviour {
                                   //各ステージの時にステージ番号(0～5)を宣言してもらう
     static public bool tutorial = false;
     static public int NowNumberOfMoves;//ステージで掛かった手数を記憶
+    static public float NowTimeCount;//ステージでかかった時間を記憶 2018/02/02小林追加
 
     static public bool clickSwitch;//↑これはクリア画面の時に手数を表示させるために使用する
-                                       //各ステージの最後で掛かった手数をここに記録させる
+                                   //各ステージの最後で掛かった手数をここに記録させる
     static public int radNum = 0;
-   // static public string Language = "Japanese"; 
+    // static public string Language = "Japanese"; 
     public int _Asobi;
 
     static public int tesu;
+
+    //2018/01/31小林追加
+    static public bool AttackRange = false;
 
     void Awake()
     {
@@ -64,7 +69,7 @@ public class StaticMaster : MonoBehaviour {
         Count = 0;
         privateDelta = 0;
         StaticMaster.SP_Full = false;
-        ClearFlag=false;
+        ClearFlag = false;
         a = 0;
         b = 0;
         c = 0;

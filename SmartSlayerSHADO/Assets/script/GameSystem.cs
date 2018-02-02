@@ -3,7 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class GameSystem : MonoBehaviour {
+public class GameSystem : MonoBehaviour
+{
     public PlayerMove playerMove;
     private EnemyMove enemyMove;
     public Text timeText;
@@ -36,6 +37,9 @@ public class GameSystem : MonoBehaviour {
     public int StageSizeMin = 0;
     public int StageSizeMax = 6;
 
+
+    //2018/02/02小林追加
+    public GameObject ScoreCount;
     enum StateCTRL
     {
         STARTENEMY,
@@ -97,7 +101,7 @@ public class GameSystem : MonoBehaviour {
                 MainMove();
                 P_Move(StaticMaster.MoveNum);
                 C_Move(StaticMaster.MoveNum);
-                if (BossSwitch.Count == 0&& GameOverWindow[0].activeSelf == false&& GameOverWindow[1].activeSelf == false)
+                if (BossSwitch.Count == 0 && GameOverWindow[0].activeSelf == false && GameOverWindow[1].activeSelf == false)
                 {
                     // Debug.Log("きてる");
                     StaticMaster.a -= scoreTesu.overBlue;
@@ -158,14 +162,14 @@ public class GameSystem : MonoBehaviour {
                 enemyMove.SendMessage("StartMove");
             }
         }
-        if (Enemy[Enemy.Count-1].transform.position.y == 0.0f)stateCTRL = StateCTRL.STARTPLAYER;//処理が終わったら実行する。(if文とかで処理が終わった判断をさせたりするのが楽かも) 
+        if (Enemy[Enemy.Count - 1].transform.position.y == 0.0f) stateCTRL = StateCTRL.STARTPLAYER;//処理が終わったら実行する。(if文とかで処理が終わった判断をさせたりするのが楽かも) 
     }
 
     void StartMovePlayer()//ゲーム開始時
     {
         //この下に処理を書いてね
-        playerMove.SendMessage("StartMove","run");
-        Player.transform.position += new Vector3(0,0,4.0f)*Time.deltaTime;
+        playerMove.SendMessage("StartMove", "run");
+        Player.transform.position += new Vector3(0, 0, 4.0f) * Time.deltaTime;
         if (Player.transform.position.z >= 0.0f)
         {
             Player.transform.position = new Vector3(Player.transform.position.x, Player.transform.position.y, 0.0f);
@@ -186,17 +190,19 @@ public class GameSystem : MonoBehaviour {
 
         //if (StaticMaster.Language == "Japanese")
         //{
-            if (StartImage[0] != null)
+        if (StartImage[0] != null)
+        {
+            StartImage[0].color = StartImage[0].color + new Color(0, 0, 0, StartImageA);
+            StartImageA += 1.0f * Time.deltaTime;
+            if (StartImageA >= 1.0f)
             {
-                StartImage[0].color = StartImage[0].color + new Color(0, 0, 0, StartImageA);
-                StartImageA += 1.0f * Time.deltaTime;
-                if (StartImageA >= 1.0f)
-                {
-                    Destroy(StartImage[0]);
-                    TapIfStartReturn.Num = 0;
-                }
-                Destroy(StartImage[1]);
+                Destroy(StartImage[0]);
+                TapIfStartReturn.Num = 0;
+                ScoreCount.SendMessage("TimeStart");
             }
+            Destroy(StartImage[1]);
+
+        }
         //}
         //else if (StaticMaster.Language == "English")
         //{
@@ -211,7 +217,7 @@ public class GameSystem : MonoBehaviour {
         //        }
         //        Destroy(StartImage[0]);
         //    }
-        
+
         //}
         P_Save = Player.transform.position;
         C_Save = CameraObj.transform.position;
@@ -281,12 +287,12 @@ public class GameSystem : MonoBehaviour {
         //        //}
         //    }
         //}
-       
+
     }
 
     void MainAttack()//指を離したときの処理
     {
-       
+
         for (int i = 0; i < Enemy.Count; i++)
         {
             if (Enemy[i] == null)
@@ -460,6 +466,7 @@ public class GameSystem : MonoBehaviour {
 
     void MoveCompletion()//UIから　指を離したときに移動するなら呼ばれる
     {
+        ScoreCount.SendMessage("TroubleCount");
         StaticMaster.privateDelta = 100;
         P_Move(StaticMaster.MoveNum);
         C_Move(StaticMaster.MoveNum);
@@ -469,8 +476,8 @@ public class GameSystem : MonoBehaviour {
             {
                 Enemy.RemoveAt(i);
             }
-          
-            if(i==Enemy.Count -1)
+
+            if (i == Enemy.Count - 1)
             {
                 Debug.Log(i);
                 Debug.Log(Enemy.Count);
@@ -494,7 +501,7 @@ public class GameSystem : MonoBehaviour {
         {
             StaticMaster.b = desEnemy[1];
         }
-        else if(enemyNum == 2)
+        else if (enemyNum == 2)
         {
             StaticMaster.c = desEnemy[2];
         }
@@ -506,10 +513,10 @@ public class GameSystem : MonoBehaviour {
 
     void sp()//PlayerMoveから　spの使用時に呼び出す
     {
-    
+
         for (int i = 0; i < Enemy.Count; i++)
         {
-            if(Player.transform.position.x + sp_hanni_0.x <= Enemy[i].transform.position.x && Player.transform.position.x + sp_hanni_1.x >= Enemy[i].transform.position.x &&
+            if (Player.transform.position.x + sp_hanni_0.x <= Enemy[i].transform.position.x && Player.transform.position.x + sp_hanni_1.x >= Enemy[i].transform.position.x &&
                Player.transform.position.z + sp_hanni_0.z <= Enemy[i].transform.position.z && Player.transform.position.z + sp_hanni_1.z >= Enemy[i].transform.position.z)
             {
                 enemyMove = Enemy[i].GetComponent<EnemyMove>();
@@ -522,7 +529,7 @@ public class GameSystem : MonoBehaviour {
                 i = -1;
             }
         }
-        
+
     }
 
     void damage()
