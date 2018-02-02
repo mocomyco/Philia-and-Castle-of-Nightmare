@@ -1,0 +1,160 @@
+fileFormatVersion: 2
+guid: 0256c6bf75c2ef54ca2bb2b529fa1659
+timeCreated: 1516939641
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: philia_complete:Hips
+    100002: philia_complete:joint1
+    100004: philia_complete:joint2
+    100006: philia_complete:LeftArm
+    100008: philia_complete:LefTFoot
+    100010: philia_complete:LeftForeArm
+    100012: philia_complete:LeftHand
+    100014: philia_complete:LeftHand1
+    100016: philia_complete:LeftHand2
+    100018: philia_complete:LeftHand3
+    100020: philia_complete:LeftHand4
+    100022: philia_complete:LeftHand5
+    100024: philia_complete:LeftLeg
+    100026: philia_complete:LeftShoulder
+    100028: philia_complete:LeftToeBase
+    100030: philia_complete:LeftUpLeg
+    100032: philia_complete:Neck
+    100034: philia_complete:RightArm
+    100036: philia_complete:RightFoot
+    100038: philia_complete:RightForeArm
+    100040: philia_complete:RightHand
+    100042: philia_complete:RightHand1
+    100044: philia_complete:RightHand2
+    100046: philia_complete:RightHand3
+    100048: philia_complete:RightHand4
+    100050: philia_complete:RightHand5
+    100052: philia_complete:RightLeg
+    100054: philia_complete:RightShoulder
+    100056: philia_complete:RightToeBase
+    100058: philia_complete:RightUpLeg
+    100060: philia_complete:sice
+    100062: philia_complete:Spine
+    100064: philia_complete:Spine1
+    100066: philia_complete:stall
+    100068: philia_complete:stall1
+    100070: philia_complete:stall2
+    100072: philia_complete:stall3
+    100074: philia_complete:stall4
+    100076: philia_complete:stall6
+    100078: //RootNode
+    400000: philia_complete:Hips
+    400002: philia_complete:joint1
+    400004: philia_complete:joint2
+    400006: philia_complete:LeftArm
+    400008: philia_complete:LefTFoot
+    400010: philia_complete:LeftForeArm
+    400012: philia_complete:LeftHand
+    400014: philia_complete:LeftHand1
+    400016: philia_complete:LeftHand2
+    400018: philia_complete:LeftHand3
+    400020: philia_complete:LeftHand4
+    400022: philia_complete:LeftHand5
+    400024: philia_complete:LeftLeg
+    400026: philia_complete:LeftShoulder
+    400028: philia_complete:LeftToeBase
+    400030: philia_complete:LeftUpLeg
+    400032: philia_complete:Neck
+    400034: philia_complete:RightArm
+    400036: philia_complete:RightFoot
+    400038: philia_complete:RightForeArm
+    400040: philia_complete:RightHand
+    400042: philia_complete:RightHand1
+    400044: philia_complete:RightHand2
+    400046: philia_complete:RightHand3
+    400048: philia_complete:RightHand4
+    400050: philia_complete:RightHand5
+    400052: philia_complete:RightLeg
+    400054: philia_complete:RightShoulder
+    400056: philia_complete:RightToeBase
+    400058: philia_complete:RightUpLeg
+    400060: philia_complete:sice
+    400062: philia_complete:Spine
+    400064: philia_complete:Spine1
+    400066: philia_complete:stall
+    400068: philia_complete:stall1
+    400070: philia_complete:stall2
+    400072: philia_complete:stall3
+    400074: philia_complete:stall4
+    400076: philia_complete:stall6
+    400078: //RootNode
+    2300000: philia_complete:sice
+    3300000: philia_complete:sice
+    4300000: philia_complete:sice
+    7400000: Philia
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

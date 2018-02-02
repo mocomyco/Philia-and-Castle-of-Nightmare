@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2017
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SmartSlayerSHADO.Plugins", "SmartSlayerSHADO.Plugins.csproj", "{D7C007AA-A4D4-12A0-AEBB-0A6A3FD1227E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SmartSlayerSHADO", "SmartSlayerSHADO.csproj", "{81177F63-2951-D62C-BE37-484D50286918}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SmartSlayerSHADO.Editor", "SmartSlayerSHADO.Editor.csproj", "{AAB2CE82-108B-09D0-8782-080F7657CE19}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D7C007AA-A4D4-12A0-AEBB-0A6A3FD1227E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D7C007AA-A4D4-12A0-AEBB-0A6A3FD1227E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D7C007AA-A4D4-12A0-AEBB-0A6A3FD1227E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D7C007AA-A4D4-12A0-AEBB-0A6A3FD1227E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{81177F63-2951-D62C-BE37-484D50286918}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{81177F63-2951-D62C-BE37-484D50286918}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{81177F63-2951-D62C-BE37-484D50286918}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{81177F63-2951-D62C-BE37-484D50286918}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AAB2CE82-108B-09D0-8782-080F7657CE19}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AAB2CE82-108B-09D0-8782-080F7657CE19}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AAB2CE82-108B-09D0-8782-080F7657CE19}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AAB2CE82-108B-09D0-8782-080F7657CE19}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

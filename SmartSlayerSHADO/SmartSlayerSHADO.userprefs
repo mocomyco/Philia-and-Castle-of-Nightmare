@@ -1,0 +1,13 @@
+﻿<Properties StartupItem="SmartSlayerSHADO.CSharp.Plugins.csproj">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\script\UI\PauseCanvas.cs">
+    <Files>
+      <File FileName="Assets\script\TitleFade.cs" Line="1" Column="1" />
+      <File FileName="Assets\script\UI\PauseCanvas.cs" Line="1" Column="1" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>

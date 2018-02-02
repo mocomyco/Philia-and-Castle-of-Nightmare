@@ -1,0 +1,186 @@
+fileFormatVersion: 2
+guid: 464fb1f76f82acb4fba983a2b1b9e92d
+timeCreated: 1516831543
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: Arm2_Left
+    100002: Arm2_Right
+    100004: Arm_Left
+    100006: Arm_Right
+    100008: atama
+    100010: BackHiza_Left
+    100012: BackHiza_Right
+    100014: BackLeg_Left
+    100016: BackLeg_Right
+    100018: BackTumasaki_Left
+    100020: BackTumasaki_Right
+    100022: doutai
+    100024: FrontHiza_Left
+    100026: FrontHiza_Right
+    100028: FrontLeg_Left
+    100030: FrontLeg_Right
+    100032: FrontTumasaki_Left
+    100034: FrontTumasaki_Right
+    100036: Hand_Left
+    100038: Hand_Right
+    100040: ikHandle1
+    100042: ikHandle2
+    100044: ikHandle3
+    100046: ikHandle4
+    100048: KETSU
+    100050: kosi
+    100052: kubi
+    100054: Lance1
+    100056: //RootNode
+    100058: pCube1
+    100060: pCube2
+    100062: polySurface10
+    100064: polySurface11
+    100066: polySurface6
+    100068: polySurface7
+    100070: polySurface8
+    100072: polySurface9
+    100074: polySurface9 1
+    100076: pSphere3
+    100078: tesaki_Left
+    100080: tesaki_Right
+    100082: transform1
+    100084: transform2
+    100086: transform3
+    100088: transform4
+    100090: transform5
+    100092: transform6
+    100094: transform7
+    100096: transform8
+    100098: transform9
+    100100: tyoutenn
+    100102: UMA
+    400000: Arm2_Left
+    400002: Arm2_Right
+    400004: Arm_Left
+    400006: Arm_Right
+    400008: atama
+    400010: BackHiza_Left
+    400012: BackHiza_Right
+    400014: BackLeg_Left
+    400016: BackLeg_Right
+    400018: BackTumasaki_Left
+    400020: BackTumasaki_Right
+    400022: doutai
+    400024: FrontHiza_Left
+    400026: FrontHiza_Right
+    400028: FrontLeg_Left
+    400030: FrontLeg_Right
+    400032: FrontTumasaki_Left
+    400034: FrontTumasaki_Right
+    400036: Hand_Left
+    400038: Hand_Right
+    400040: ikHandle1
+    400042: ikHandle2
+    400044: ikHandle3
+    400046: ikHandle4
+    400048: KETSU
+    400050: kosi
+    400052: kubi
+    400054: Lance1
+    400056: //RootNode
+    400058: pCube1
+    400060: pCube2
+    400062: polySurface10
+    400064: polySurface11
+    400066: polySurface6
+    400068: polySurface7
+    400070: polySurface8
+    400072: polySurface9
+    400074: polySurface9 1
+    400076: pSphere3
+    400078: tesaki_Left
+    400080: tesaki_Right
+    400082: transform1
+    400084: transform2
+    400086: transform3
+    400088: transform4
+    400090: transform5
+    400092: transform6
+    400094: transform7
+    400096: transform8
+    400098: transform9
+    400100: tyoutenn
+    400102: UMA
+    2300000: Lance1
+    3300000: Lance1
+    4300000: pCube2
+    4300002: Lance1
+    7400000: idle
+    9500000: //RootNode
+    13700000: pCube2
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

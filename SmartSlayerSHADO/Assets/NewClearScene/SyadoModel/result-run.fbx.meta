@@ -1,0 +1,216 @@
+fileFormatVersion: 2
+guid: 31c40c73c026da942a6d4a865e64bce5
+timeCreated: 1503487709
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: eye_control
+    100002: Head
+    100004: HeadTop
+    100006: Hips
+    100008: ikHandle1
+    100010: ikHandle2
+    100012: LeftArm
+    100014: LeftArm1
+    100016: LeftFinger
+    100018: LeftFinger1
+    100020: LeftFingerBase
+    100022: LeftFingerBase1
+    100024: LeftFoot
+    100026: LeftForeArm
+    100028: LeftHand
+    100030: LeftLeg
+    100032: LeftToe
+    100034: LeftToeBase
+    100036: LeftUpLeg
+    100038: Neck
+    100040: pCylinder2
+    100042: polySurface266
+    100044: polySurface334
+    100046: polySurface335
+    100048: polySurface336
+    100050: //RootNode
+    100052: RightArm
+    100054: RightArm1
+    100056: RightFinger
+    100058: RightFinger1
+    100060: RightFingerBase
+    100062: RightFingerBase1
+    100064: RightFoot
+    100066: RightForeArm
+    100068: RightHand
+    100070: RightLeg
+    100072: RightToe
+    100074: RightToeBase
+    100076: RightUpLeg
+    100078: shado
+    100080: skelton
+    100082: Spine
+    100084: Spine1
+    100086: sword:imagePlane1
+    100088: sword:pCube1
+    100090: sword:pCube2
+    100092: sword:pCube3
+    100094: sword:pCube4
+    100096: sword:pCylinder1
+    100098: sword:pCylinder2
+    100100: sword:polySurface1
+    100102: sword:polySurface2
+    100104: sword:polySurface2 1
+    100106: sword:transform1
+    100108: sword:transform2
+    100110: sword:transform3
+    100112: sword:transform4
+    100114: sword:transform5
+    100116: sword:transform6
+    100118: sword:transform7
+    100120: sword:transform8
+    400000: eye_control
+    400002: Head
+    400004: HeadTop
+    400006: Hips
+    400008: ikHandle1
+    400010: ikHandle2
+    400012: LeftArm
+    400014: LeftArm1
+    400016: LeftFinger
+    400018: LeftFinger1
+    400020: LeftFingerBase
+    400022: LeftFingerBase1
+    400024: LeftFoot
+    400026: LeftForeArm
+    400028: LeftHand
+    400030: LeftLeg
+    400032: LeftToe
+    400034: LeftToeBase
+    400036: LeftUpLeg
+    400038: Neck
+    400040: pCylinder2
+    400042: polySurface266
+    400044: polySurface334
+    400046: polySurface335
+    400048: polySurface336
+    400050: //RootNode
+    400052: RightArm
+    400054: RightArm1
+    400056: RightFinger
+    400058: RightFinger1
+    400060: RightFingerBase
+    400062: RightFingerBase1
+    400064: RightFoot
+    400066: RightForeArm
+    400068: RightHand
+    400070: RightLeg
+    400072: RightToe
+    400074: RightToeBase
+    400076: RightUpLeg
+    400078: shado
+    400080: skelton
+    400082: Spine
+    400084: Spine1
+    400086: sword:imagePlane1
+    400088: sword:pCube1
+    400090: sword:pCube2
+    400092: sword:pCube3
+    400094: sword:pCube4
+    400096: sword:pCylinder1
+    400098: sword:pCylinder2
+    400100: sword:polySurface1
+    400102: sword:polySurface2
+    400104: sword:polySurface2 1
+    400106: sword:transform1
+    400108: sword:transform2
+    400110: sword:transform3
+    400112: sword:transform4
+    400114: sword:transform5
+    400116: sword:transform6
+    400118: sword:transform7
+    400120: sword:transform8
+    2300000: pCylinder2
+    2300002: polySurface334
+    2300004: polySurface335
+    2300006: polySurface336
+    2300008: sword:pCylinder2
+    3300000: pCylinder2
+    3300002: polySurface334
+    3300004: polySurface335
+    3300006: polySurface336
+    3300008: sword:pCylinder2
+    4300000: polySurface334
+    4300002: polySurface335
+    4300004: polySurface336
+    4300006: shado
+    4300008: pCylinder2
+    4300010: sword:pCylinder2
+    7400000: result-run
+    9500000: //RootNode
+    13700000: shado
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 1
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
