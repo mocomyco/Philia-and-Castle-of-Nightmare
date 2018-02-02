@@ -120,10 +120,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="SmartSlayerSHADO.Plugins.csproj">
-      <Project>{D7C007AA-A4D4-12A0-AEBB-0A6A3FD1227E}</Project>
-      <Name>SmartSlayerSHADO.Plugins</Name>
-    </ProjectReference>
     <ProjectReference Include="SmartSlayerSHADO.csproj">
       <Project>{81177F63-2951-D62C-BE37-484D50286918}</Project>
       <Name>SmartSlayerSHADO</Name>
