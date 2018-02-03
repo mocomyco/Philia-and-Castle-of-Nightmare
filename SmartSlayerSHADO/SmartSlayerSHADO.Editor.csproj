@@ -103,9 +103,6 @@
     <Reference Include="UnityEngine.VR">
       <HintPath>C:/Program Files/Unity5.5.1/InstallFoldre/Editor/Data/UnityExtensions/Unity/UnityVR/RuntimeEditor/UnityEngine.VR.dll</HintPath>
     </Reference>
-    <Reference Include="JMOAssets">
-      <HintPath>Assets/JMO Assets/Editor/JMOAssets.dll</HintPath>
-    </Reference>
     <Reference Include="UnityEditor.Graphs">
       <HintPath>C:/Program Files/Unity5.5.1/InstallFoldre/Editor/Data/Managed/UnityEditor.Graphs.dll</HintPath>
     </Reference>
@@ -120,10 +117,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="SmartSlayerSHADO.Plugins.csproj">
-      <Project>{D7C007AA-A4D4-12A0-AEBB-0A6A3FD1227E}</Project>
-      <Name>SmartSlayerSHADO.Plugins</Name>
-    </ProjectReference>
     <ProjectReference Include="SmartSlayerSHADO.csproj">
       <Project>{81177F63-2951-D62C-BE37-484D50286918}</Project>
       <Name>SmartSlayerSHADO</Name>

@@ -75,16 +75,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="SmartSlayerSHADO.Plugins.csproj">
-      <Project>{D7C007AA-A4D4-12A0-AEBB-0A6A3FD1227E}</Project>
-      <Name>SmartSlayerSHADO.Plugins</Name>
-    </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
-    <Compile Include="Assets\0_éóéτé╚éóÄq\Hp\Hp.cs" />
     <Compile Include="Assets\19\fogAnim.cs" />
     <Compile Include="Assets\AttackRange\AttackRangeMove.cs" />
     <Compile Include="Assets\AttackRange\AttackRangeUI.cs" />
+    <Compile Include="Assets\Hp.cs" />
     <Compile Include="Assets\JMO Assets\Toony Colors\Demo 2.0\TCF_Demo.cs" />
     <Compile Include="Assets\NewClearScene\GameClear.cs" />
     <Compile Include="Assets\NewClearScene\GameData.cs" />
