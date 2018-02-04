@@ -103,9 +103,6 @@
     <Reference Include="UnityEngine.VR">
       <HintPath>C:/Program Files/Unity5.5.1/InstallFoldre/Editor/Data/UnityExtensions/Unity/UnityVR/RuntimeEditor/UnityEngine.VR.dll</HintPath>
     </Reference>
-    <Reference Include="JMOAssets">
-      <HintPath>Assets/JMO Assets/Editor/JMOAssets.dll</HintPath>
-    </Reference>
     <Reference Include="UnityEditor.Graphs">
       <HintPath>C:/Program Files/Unity5.5.1/InstallFoldre/Editor/Data/Managed/UnityEditor.Graphs.dll</HintPath>
     </Reference>
