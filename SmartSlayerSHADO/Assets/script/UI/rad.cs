@@ -48,20 +48,19 @@ public class rad : MonoBehaviour
                     return;
                 }
             }
-
             if (StaticMaster.Asobi > StaticMaster.mag)
             {
                 StaticMaster.MoveNum = 0;
                 value.value = 0;
             }
             else
-            if (Num == 5 && (StartRad <= StaticMaster.rad || StaticMaster.rad < EndRad))
+            if (Num == 5 && (StartRad <= StaticMaster.rad || StaticMaster.rad < EndRad) && StaticMaster.MoveNum == 0)
             {
 
                 StaticMaster.MoveNum = Num;
             }
             else
-            if (StartRad <= StaticMaster.rad && StaticMaster.rad < EndRad )
+            if (StartRad <= StaticMaster.rad && StaticMaster.rad < EndRad && StaticMaster.MoveNum == 0)
             {
                 StaticMaster.MoveNum = Num;
             }

@@ -98,7 +98,7 @@ public class UI : MonoBehaviour
         if (Application.platform == RuntimePlatform.Android)
         {
             Touch touch = Input.GetTouch(0);
-          
+            //Input.GetMouseButton(0)
             if (touch.phase == TouchPhase.Began && (StaticMaster.AnchorNum == 0 || (StaticMaster.AnchorNum == 1)) && StaticMaster.SP_AttackUse == false && /*(StaticMaster.gameSystemEnum == "MAINIDLE" || StaticMaster.gameSystemEnum == "MAINMOVE") &&*/ StaticMaster.tutorial == false && tutorial != 3&&Time.deltaTime !=0)//AnchorNum = 3 は討伐報告のボタン用
             {
                 tap.Play();
@@ -179,6 +179,7 @@ public class UI : MonoBehaviour
                 if (StaticMaster.mag - StaticMaster.Asobi > 100 * Slow)
                 {
                     StaticMaster.privateDelta = 100;
+
                 }
                 else
                 {
