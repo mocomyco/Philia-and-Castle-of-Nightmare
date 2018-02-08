@@ -11,7 +11,6 @@ public class EnemyReset : MonoBehaviour
     public GameObject[] EnemyObject;
     private Vector3[] EnemyObjectVec;
     public Vector3[] EnemyAttackHani;
-    public int stateNum;
     public Tuto_States tutoStates;
     public Image fIn;
     private float count;
@@ -27,8 +26,6 @@ public class EnemyReset : MonoBehaviour
 
     void Start()
     {
-
-        Debug.Log(stateNum + "Start");
         count = 0;
         fIn.enabled = true;
         _enum = State.START;
@@ -40,8 +37,7 @@ public class EnemyReset : MonoBehaviour
         //}
 
     }
-
-    // Update is called once per frame
+    
     void Update()
     {
         switch (_enum)
@@ -67,7 +63,7 @@ public class EnemyReset : MonoBehaviour
                     (count <= 0)
                 {
                     fIn.enabled = false;
-                    tutoStates.SendMessage("NextContentsNum", stateNum);
+                    tutoStates.SendMessage("NextContentsNum");
                 }
                 break;
             default:

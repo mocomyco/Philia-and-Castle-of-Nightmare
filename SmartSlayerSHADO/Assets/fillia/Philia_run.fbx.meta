@@ -1,0 +1,184 @@
+fileFormatVersion: 2
+guid: b95ff4900e266734f974b4ff4c7963fa
+timeCreated: 1518071926
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: eye_control
+    100002: Hips
+    100004: ikHandle3
+    100006: ikHandle4
+    100008: ikHandle5
+    100010: ikHandle6
+    100012: joint1
+    100014: joint2
+    100016: Left_accessory
+    100018: LeftArm
+    100020: LefTFoot
+    100022: LeftForeArm
+    100024: LeftHand
+    100026: LeftHand1
+    100028: LeftHand2
+    100030: LeftHand3
+    100032: LeftHand4
+    100034: LeftHand5
+    100036: LeftLeg
+    100038: LeftShoulder
+    100040: LeftToeBase
+    100042: LeftUpLeg
+    100044: Neck
+    100046: philia
+    100048: //RootNode
+    100050: Right_accessory
+    100052: RightArm
+    100054: RightFoot
+    100056: RightForeArm
+    100058: RightHand
+    100060: RightHand1
+    100062: RightHand2
+    100064: RightHand3
+    100066: RightHand4
+    100068: RightHand5
+    100070: RightLeg
+    100072: RightShoulder
+    100074: RightToeBase
+    100076: RightUpLeg
+    100078: sice
+    100080: Spine
+    100082: Spine1
+    100084: stall
+    100086: stall1
+    100088: stall2
+    100090: stall3
+    100092: stall4
+    100094: stall6
+    400000: eye_control
+    400002: Hips
+    400004: ikHandle3
+    400006: ikHandle4
+    400008: ikHandle5
+    400010: ikHandle6
+    400012: joint1
+    400014: joint2
+    400016: Left_accessory
+    400018: LeftArm
+    400020: LefTFoot
+    400022: LeftForeArm
+    400024: LeftHand
+    400026: LeftHand1
+    400028: LeftHand2
+    400030: LeftHand3
+    400032: LeftHand4
+    400034: LeftHand5
+    400036: LeftLeg
+    400038: LeftShoulder
+    400040: LeftToeBase
+    400042: LeftUpLeg
+    400044: Neck
+    400046: philia
+    400048: //RootNode
+    400050: Right_accessory
+    400052: RightArm
+    400054: RightFoot
+    400056: RightForeArm
+    400058: RightHand
+    400060: RightHand1
+    400062: RightHand2
+    400064: RightHand3
+    400066: RightHand4
+    400068: RightHand5
+    400070: RightLeg
+    400072: RightShoulder
+    400074: RightToeBase
+    400076: RightUpLeg
+    400078: sice
+    400080: Spine
+    400082: Spine1
+    400084: stall
+    400086: stall1
+    400088: stall2
+    400090: stall3
+    400092: stall4
+    400094: stall6
+    2300000: Left_accessory
+    2300002: Right_accessory
+    2300004: sice
+    3300000: Left_accessory
+    3300002: Right_accessory
+    3300004: sice
+    4300000: sice
+    4300002: philia
+    4300004: Left_accessory
+    4300006: Right_accessory
+    7400000: Philia_run
+    9500000: //RootNode
+    13700000: philia
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

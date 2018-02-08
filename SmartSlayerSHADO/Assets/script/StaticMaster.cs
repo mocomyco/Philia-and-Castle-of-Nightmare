@@ -13,7 +13,7 @@ public class StaticMaster : MonoBehaviour
     static public float privateDelta;
     static public float rad, mag;
     static public bool Pause;
-    static public int Count;
+    static public int Count; //現在の手数
     static public int WaveCount;
     static public int MoveNum;
 

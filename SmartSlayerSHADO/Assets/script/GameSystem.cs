@@ -10,7 +10,7 @@ public class GameSystem : MonoBehaviour
     public Text timeText;
     public float _time;
     public int[] desEnemy;
-    public Image PlayerLifeImage;
+    
     public sceneChange SceneChange;
 
     public List<GameObject> Enemy;
@@ -18,7 +18,12 @@ public class GameSystem : MonoBehaviour
     public GameObject CameraObj;
     private Vector3 P_Save;
     private Vector3 C_Save;
-    public SP_Gauge sp_Gauge;
+
+
+    [SerializeField]
+    [Header("必殺技ゲージ")]
+    private SP_Gauge sp_Gauge;
+
     public Vector3 sp_hanni_0;
     public Vector3 sp_hanni_1;
     public GameObject HitEffect;
@@ -37,6 +42,10 @@ public class GameSystem : MonoBehaviour
     public int StageSizeMin = 0;
     public int StageSizeMax = 6;
 
+    [SerializeField]
+    [Header("フィリアのライフポイント")]
+    private int _Philia_LifePoint　= 3;//固定値
+    private Image[] _Philia_LifeImage = new Image[3];
 
     //2018/02/02小林追加
     public GameObject ScoreCount;
@@ -64,8 +73,24 @@ public class GameSystem : MonoBehaviour
         StaticMaster.stageSizeMax = StageSizeMax;
     }
 
+    /// <summary>
+    /// Start時に読み込む　GetComponent一覧
+    /// </summary>
+    void StartGetComponents()
+    {  
+        //PlayerのHP
+        _Philia_LifeImage[0] = GameObject.Find("PlayerStates/Philia_HP/Stock01").GetComponentInChildren<Image>();
+        _Philia_LifeImage[1] = GameObject.Find("PlayerStates/Philia_HP/Stock02").GetComponentInChildren<Image>();
+        _Philia_LifeImage[2] = GameObject.Find("PlayerStates/Philia_HP/Stock03").GetComponentInChildren<Image>();
+
+        //PlayerのSP
+        sp_Gauge = GameObject.Find("PlayerStates/Philia_SP").GetComponentInChildren<SP_Gauge>();
+    }
+
+
     void Start()
     {
+        StartGetComponents();
         GameObject[] e = GameObject.FindGameObjectsWithTag("Enemy");//Enemyの自動取得
         foreach (GameObject Ene in e)
         {
@@ -74,14 +99,13 @@ public class GameSystem : MonoBehaviour
                 Enemy.Add(Ene);
             }
         }
-        //PlayerLifeText.text = "" + PlayerLife;
-        PlayerLifeImage.fillAmount = 1.0f;
         stateCTRL = StateCTRL.STARTENEMY;
         TapIfStartReturn.Num = 3;
     }
 
     void Update()
     {
+       
         switch (stateCTRL)
         {
             case StateCTRL.STARTENEMY:
@@ -152,17 +176,23 @@ public class GameSystem : MonoBehaviour
     {
         //この下に処理を書いてね
         TapIfStartReturn.Num = 3;
-        for (int i = 0; i < Enemy.Count; i++)
+        Debug.Log(Enemy.Count);
+        if (Enemy.Count != 1)
         {
-            if (Enemy[i].transform.position.y < 0.0f) Enemy[i].transform.position += new Vector3(0, 1.0f, 0) * Time.deltaTime;
-            else
+            for (int i = 0; i < Enemy.Count; i++)
             {
-                Enemy[i].transform.position = new Vector3(Enemy[i].transform.position.x, 0.0f, Enemy[i].transform.position.z);
-                enemyMove = Enemy[i].GetComponent<EnemyMove>();
-                enemyMove.SendMessage("StartMove");
+                if (Enemy[i].transform.position.y < 0.0f) Enemy[i].transform.position += new Vector3(0, 1.0f, 0) * Time.deltaTime;
+                else
+                {
+                    Enemy[i].transform.position = new Vector3(Enemy[i].transform.position.x, 0.0f, Enemy[i].transform.position.z);
+                    enemyMove = Enemy[i].GetComponent<EnemyMove>();
+                    enemyMove.SendMessage("StartMove");
+                }
             }
+
+            if (Enemy[Enemy.Count - 1].transform.position.y == 0.0f) stateCTRL = StateCTRL.STARTPLAYER;//処理が終わったら実行する。(if文とかで処理が終わった判断をさせたりするのが楽かも) 
         }
-        if (Enemy[Enemy.Count - 1].transform.position.y == 0.0f) stateCTRL = StateCTRL.STARTPLAYER;//処理が終わったら実行する。(if文とかで処理が終わった判断をさせたりするのが楽かも) 
+        else stateCTRL = StateCTRL.STARTPLAYER;
     }
 
     void StartMovePlayer()//ゲーム開始時
@@ -198,7 +228,7 @@ public class GameSystem : MonoBehaviour
             {
                 Destroy(StartImage[0]);
                 TapIfStartReturn.Num = 0;
-                ScoreCount.SendMessage("TimeStart");
+                if(ScoreCount)ScoreCount.SendMessage("TimeStart");//ScoreCountがある時だけSend
             }
             Destroy(StartImage[1]);
 
@@ -454,19 +484,33 @@ public class GameSystem : MonoBehaviour
         PlayerMove.FlashingFlag = true;
         Instantiate(HitEffect, E_pos + new Vector3(0, 1, 0), Quaternion.Euler(0, 0, 0));
         sp_Gauge.SendMessage("DestroyEnemyChargeBool");
-        if (PlayerLifeImage.fillAmount == 1.0f) PlayerLifeImage.fillAmount = 0.635f;
-        else if (PlayerLifeImage.fillAmount == 0.635f) PlayerLifeImage.fillAmount = 0.315f;
-        else if (PlayerLifeImage.fillAmount == 0.315f)
+
+        /// <summary>
+        /// フィリア版ライフポイント　１ダメージ前提で処理
+        /// </summary>
+        _Philia_LifePoint -= 1;
+        switch (_Philia_LifePoint)
         {
-            PlayerLifeImage.fillAmount = 0.0f;
-            GameOverWindow[0].SetActive(true);
-            stateCTRL = StateCTRL.WINDOW;
+            case 2:
+                _Philia_LifeImage[2].enabled = false;
+                break;
+            case 1:
+                _Philia_LifeImage[1].enabled = false;
+                break;
+            case 0:
+                _Philia_LifeImage[0].enabled = false;
+                GameOverWindow[0].SetActive(true);
+                stateCTRL = StateCTRL.WINDOW;
+                break;
+            default:
+                break;
         }
+
     }
 
     void MoveCompletion()//UIから　指を離したときに移動するなら呼ばれる
     {
-        ScoreCount.SendMessage("TroubleCount");
+        if(ScoreCount) ScoreCount.SendMessage("TroubleCount");
         StaticMaster.privateDelta = 100;
         P_Move(StaticMaster.MoveNum);
         C_Move(StaticMaster.MoveNum);

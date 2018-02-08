@@ -50,12 +50,14 @@ public class Tuto_States : MonoBehaviour {
         }
 	}
 
-    public void NextContentsNum(int Num)
+    public void NextContentsNum()
     {
 
-        Debug.Log(Num + "States Send");
-        Num += 1;
-        nowStateInt = Num;
+        Debug.Log(nowState + "States Start");
+        //Num += 1;
+        //nowStateInt = Num;
+        nowStateInt += 1;
+       
         StaticMaster.tutorial = true;
         if (nowStateInt == 2) ui.tutorial = 1;
         if (nowStateInt == 7) ui.tutorial = 2;
@@ -63,14 +65,14 @@ public class Tuto_States : MonoBehaviour {
         if (nowStateInt == 14) ui.tutorial = 1;
 
 
-        if (Num > AllContents.Length)
+        if (nowStateInt > AllContents.Length)
         {
             Debug.Log("エラー");
             return;
         }
         for(int i =0; i< AllContents.Length; i++)
         {
-            if(i == Num)
+            if(i == nowStateInt)
             {
                 nowState[i] = true;
                 AllContents[i].SetActive(true);

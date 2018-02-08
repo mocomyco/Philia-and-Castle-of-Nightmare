@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class Tuto_TimeSpece : MonoBehaviour {
     public int WaitTime;
-    public int stateNum;
     public Tuto_States tutostate;
     private bool swich;
     // Use this for initialization
@@ -26,6 +25,6 @@ public class Tuto_TimeSpece : MonoBehaviour {
 
     void System()
     {
-        tutostate.SendMessage("NextContentsNum", stateNum);
+        tutostate.SendMessage("NextContentsNum");
     }
 }

@@ -181,6 +181,7 @@
     <Compile Include="Assets\tutorial\Tuto_TimeSpece.cs" />
     <Compile Include="Assets\tutorial\Tuto_UserPlay.cs" />
     <Compile Include="Assets\tutorial\images\Tuto_Chat.cs" />
+    <Compile Include="Assets\tutorial\images\Tuto_Ido.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\ImageData\newKASU.shader" />
