@@ -132,6 +132,7 @@
     <Compile Include="Assets\Sound\SE\new\PizaconCarsol.cs" />
     <Compile Include="Assets\Sound\SE\new\Sekkin.cs" />
     <Compile Include="Assets\TutoEnd.cs" />
+    <Compile Include="Assets\fillia\SpecialAttackAnimTrigger.cs" />
     <Compile Include="Assets\script\CreateBoard.cs" />
     <Compile Include="Assets\script\DeadLine.cs" />
     <Compile Include="Assets\script\DestroyEffect.cs" />

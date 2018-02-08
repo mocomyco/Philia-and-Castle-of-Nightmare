@@ -8,6 +8,8 @@ public class SP_Gauge : MonoBehaviour {
     public float DestroyEnemyCharge;
     public float WalkCharge;
     public GameObject Player;
+
+    [Header("必殺技オブジェクト")]
     public GameObject[] sp_Attack;
     public float MaxPos_z;
     public bool Cheack_Pos_x;
@@ -37,7 +39,7 @@ public class SP_Gauge : MonoBehaviour {
 
     public void InstansSpAttack()
     {
-        Instantiate(sp_Attack[0], new Vector3(Player.transform.position.x, 1.0f, Player.transform.position.z), Quaternion.Euler(90, 0, 0));
+        Instantiate(sp_Attack[0], new Vector3(Player.transform.position.x, 1.0f, Player.transform.position.z), Quaternion.Euler(0, 0, 0));
     }
 
     void DestroyEnemyChargeBool()

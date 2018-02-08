@@ -111,8 +111,9 @@ ModelImporter:
     4300002: philia
     4300004: Left_accessory
     4300006: Right_accessory
-    7400000: Philia_run
+    7400000: run
     9500000: //RootNode
+    11100000: //RootNode
     13700000: philia
   materials:
     importMaterials: 1
@@ -134,7 +135,131 @@ ModelImporter:
     animationScaleError: 0.5
     animationWrapMode: 0
     extraExposedTransformPaths: []
-    clipAnimations: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: run
+      takeName: Philia_run
+      firstFrame: 1
+      lastFrame: 60
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: eye_control
+        weight: 1
+      - path: Hips
+        weight: 1
+      - path: Hips/LeftUpLeg
+        weight: 1
+      - path: Hips/LeftUpLeg/LeftLeg
+        weight: 1
+      - path: Hips/LeftUpLeg/LeftLeg/LefTFoot
+        weight: 1
+      - path: Hips/LeftUpLeg/LeftLeg/LefTFoot/LeftToeBase
+        weight: 1
+      - path: Hips/RightUpLeg
+        weight: 1
+      - path: Hips/RightUpLeg/RightLeg
+        weight: 1
+      - path: Hips/RightUpLeg/RightLeg/RightFoot
+        weight: 1
+      - path: Hips/RightUpLeg/RightLeg/RightFoot/RightToeBase
+        weight: 1
+      - path: Hips/Spine
+        weight: 1
+      - path: Hips/Spine/Spine1
+        weight: 1
+      - path: Hips/Spine/Spine1/LeftShoulder
+        weight: 1
+      - path: Hips/Spine/Spine1/LeftShoulder/LeftArm
+        weight: 1
+      - path: Hips/Spine/Spine1/LeftShoulder/LeftArm/LeftForeArm
+        weight: 1
+      - path: Hips/Spine/Spine1/LeftShoulder/LeftArm/LeftForeArm/LeftHand
+        weight: 1
+      - path: Hips/Spine/Spine1/LeftShoulder/LeftArm/LeftForeArm/LeftHand/LeftHand1
+        weight: 1
+      - path: Hips/Spine/Spine1/LeftShoulder/LeftArm/LeftForeArm/LeftHand/LeftHand1/LeftHand2
+        weight: 1
+      - path: Hips/Spine/Spine1/LeftShoulder/LeftArm/LeftForeArm/LeftHand/LeftHand1/LeftHand2/LeftHand3
+        weight: 1
+      - path: Hips/Spine/Spine1/LeftShoulder/LeftArm/LeftForeArm/LeftHand/LeftHand4
+        weight: 1
+      - path: Hips/Spine/Spine1/LeftShoulder/LeftArm/LeftForeArm/LeftHand/LeftHand4/LeftHand5
+        weight: 1
+      - path: Hips/Spine/Spine1/Neck
+        weight: 1
+      - path: Hips/Spine/Spine1/Neck/joint1
+        weight: 1
+      - path: Hips/Spine/Spine1/Neck/joint1/joint2
+        weight: 1
+      - path: Hips/Spine/Spine1/RightShoulder
+        weight: 1
+      - path: Hips/Spine/Spine1/RightShoulder/RightArm
+        weight: 1
+      - path: Hips/Spine/Spine1/RightShoulder/RightArm/RightForeArm
+        weight: 1
+      - path: Hips/Spine/Spine1/RightShoulder/RightArm/RightForeArm/RightHand
+        weight: 1
+      - path: Hips/Spine/Spine1/RightShoulder/RightArm/RightForeArm/RightHand/RightHand1
+        weight: 1
+      - path: Hips/Spine/Spine1/RightShoulder/RightArm/RightForeArm/RightHand/RightHand1/RightHand2
+        weight: 1
+      - path: Hips/Spine/Spine1/RightShoulder/RightArm/RightForeArm/RightHand/RightHand1/RightHand2/RightHand3
+        weight: 1
+      - path: Hips/Spine/Spine1/RightShoulder/RightArm/RightForeArm/RightHand/RightHand4
+        weight: 1
+      - path: Hips/Spine/Spine1/RightShoulder/RightArm/RightForeArm/RightHand/RightHand4/RightHand5
+        weight: 1
+      - path: Hips/Spine/Spine1/RightShoulder/RightArm/RightForeArm/RightHand/sice
+        weight: 1
+      - path: Hips/Spine/Spine1/stall
+        weight: 1
+      - path: Hips/Spine/Spine1/stall/stall1
+        weight: 1
+      - path: Hips/Spine/Spine1/stall/stall1/stall2
+        weight: 1
+      - path: Hips/Spine/Spine1/stall6
+        weight: 1
+      - path: Hips/Spine/Spine1/stall6/stall3
+        weight: 1
+      - path: Hips/Spine/Spine1/stall6/stall3/stall4
+        weight: 1
+      - path: ikHandle3
+        weight: 1
+      - path: ikHandle4
+        weight: 1
+      - path: ikHandle5
+        weight: 1
+      - path: ikHandle6
+        weight: 1
+      - path: Left_accessory
+        weight: 1
+      - path: philia
+        weight: 1
+      - path: Right_accessory
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
     isReadable: 1
   meshes:
     lODScreenPercentages: []
@@ -173,10 +298,10 @@ ModelImporter:
     rootMotionBoneName: 
     rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
     hasTranslationDoF: 0
-    hasExtraRoot: 0
+    hasExtraRoot: 1
     skeletonHasParents: 1
   lastHumanDescriptionAvatarSource: {instanceID: 0}
-  animationType: 2
+  animationType: 1
   humanoidOversampling: 1
   additionalBone: 0
   userData: 

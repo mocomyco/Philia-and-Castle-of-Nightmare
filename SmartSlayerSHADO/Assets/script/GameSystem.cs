@@ -84,7 +84,7 @@ public class GameSystem : MonoBehaviour
         _Philia_LifeImage[2] = GameObject.Find("PlayerStates/Philia_HP/Stock03").GetComponentInChildren<Image>();
 
         //PlayerのSP
-        sp_Gauge = GameObject.Find("PlayerStates/Philia_SP").GetComponentInChildren<SP_Gauge>();
+        sp_Gauge = GameObject.Find("PlayerStates/Philia_SP").GetComponent<SP_Gauge>();
     }
 
 

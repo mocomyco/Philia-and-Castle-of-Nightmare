@@ -4,18 +4,37 @@ using UnityEngine;
 using UnityEngine.UI;
 
 public class SPButton : MonoBehaviour {
-    public SP_Gauge spGauge;
+    [SerializeField]
+    [Header("フィリアのSPゲージ")]
+    private SP_Gauge spGauge;
+
+    [SerializeField]
+    [Header("必殺技エフェクト発動スクリプト")]
+    private SpecialAttackAnimTrigger specialAttackAnimTrigger;
+
+    
     public PlayerMove PMove;
     private UI ui;
     private Button button;
     private AnchorNumber anc;
+
+
     
-    // Use this for initialization
-    void Start()
+   void StartGetComponent()
     {
         ui = GameObject.Find("GameSystem").GetComponent<UI>();
         button = GetComponent<Button>();
         anc = GetComponent<AnchorNumber>();
+        //PlayerのSP
+        spGauge = GameObject.Find("PlayerStates/Philia_SP").GetComponent<SP_Gauge>();
+
+        //必殺技発動のスクリプト
+        specialAttackAnimTrigger = GameObject.Find("Player/philia_idle").GetComponent<SpecialAttackAnimTrigger>();
+    }
+
+    void Start()
+    {
+        StartGetComponent();
     }
 
     // Update is called once per frame
@@ -39,6 +58,7 @@ public class SPButton : MonoBehaviour {
         {
             spGauge.SendMessage("SP");
             PMove.SendMessage("SP_Attack");
+            specialAttackAnimTrigger.SendMessage("SpecialAttack");
         }
     }
 }

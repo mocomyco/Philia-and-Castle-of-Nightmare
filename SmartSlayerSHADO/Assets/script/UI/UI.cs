@@ -12,7 +12,7 @@ public class UI : MonoBehaviour
     public GameObject Clone;
     public Canvas canvas;
     public SP_Gauge sp_Gauge;
-    public Image SPGaugeImage;
+   // public Image SPGaugeImage;
     private PlayerMove PMove;
     private float IdouKyori;
     public string HoldState;
