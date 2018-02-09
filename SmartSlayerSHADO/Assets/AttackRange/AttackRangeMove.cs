@@ -67,7 +67,7 @@ public class AttackRangeMove : MonoBehaviour {
                 EnemyAttackRangeStop();
                 Go = false;
             }
-            if (Input.GetMouseButtonDown(0) == true && StaticMaster.AnchorNum == 0)
+            if (StaticMaster.AnchorNum == 0 && Go == true)
             {
                 EnemyAttackRangeStop();
                 Go = false;

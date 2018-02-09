@@ -1,6 +1,6 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2017
+# Visual Studio 2015
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SmartSlayerSHADO", "SmartSlayerSHADO.csproj", "{81177F63-2951-D62C-BE37-484D50286918}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SmartSlayerSHADO.Editor", "SmartSlayerSHADO.Editor.csproj", "{AAB2CE82-108B-09D0-8782-080F7657CE19}"
