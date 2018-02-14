@@ -9,7 +9,7 @@ public class Tuto_Image : MonoBehaviour {
     public Image pauseCanvas;
     private int nowSlideNum;
     public Tuto_States tutoStates;
-    public int stateNum;
+   
     public AudioSource BGM;
     public AudioSource SE;
     
@@ -17,7 +17,7 @@ public class Tuto_Image : MonoBehaviour {
     void Start()
     {
 
-        Debug.Log(stateNum + "Start");
+     
         StaticMaster.tutorial = true;
         nowSlideNum = 0;
         if (pauseCanvas.enabled == false) pauseCanvas.enabled = true;
@@ -105,7 +105,7 @@ public class Tuto_Image : MonoBehaviour {
                 BGM.volume = 1;
                 StaticMaster.AnchorNum = 1;
                 pauseCanvas.enabled = false;
-                tutoStates.SendMessage("NextContentsNum", stateNum);
+                tutoStates.SendMessage("NextContentsNum");
                 gameObject.SetActive(false);
 
             }

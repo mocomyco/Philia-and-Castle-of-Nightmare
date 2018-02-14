@@ -11,10 +11,19 @@ public class sceneChange : MonoBehaviour {
     public AudioSource click;
     private int flag;
 
+   //"Title,Select`のギザアニメーション"
+    public Animation _StageCutAnim;
+
     public string NowStageName;//追加部分(2017/08/26・小林)
 
     void Start()
     {
+        if (StaticMaster.StageName == "Title"|| StaticMaster.StageName == "Select")
+        {
+            _StageCutAnim = GameObject.Find("Canvas/BackGround").GetComponent<Animation>();
+
+        }
+
         if (SceneManager.GetActiveScene().name!="Select") {
             if (int.Parse(SceneManager.GetActiveScene().name) >= 20)
             {
@@ -56,6 +65,8 @@ public class sceneChange : MonoBehaviour {
         }
     }
 
+
+
     void SceneChange_Boss()//音入りシーンチェンジ(タイトル)
     {
         click.Play();
@@ -96,6 +107,45 @@ public class sceneChange : MonoBehaviour {
         {
             SceneManager.LoadScene(sceneName);
         } 
+    }
+
+
+
+
+    /// <summary>
+    /// ギザアニメーション付きのアニメーション
+    /// </summary>
+    private AsyncOperation async;
+    public GameObject LoadingUi;
+    private Animator _GizaBackGroundAnim;
+
+    public void LoadNextScene()
+    {
+        _GizaBackGroundAnim = GameObject.Find("Canvas/BackGround").GetComponent<Animator>();
+        _GizaBackGroundAnim.enabled = true;
+        LoadingUi.SetActive(true);
+        Invoke("AnimEND", 2);
+    }
+
+    void AnimEND()
+    {
+        _GizaBackGroundAnim.SetTrigger("OUt");
+        StartCoroutine(LoadScene());
+    }
+
+    IEnumerator LoadScene()
+    {
+        async = SceneManager.LoadSceneAsync("11");
+
+        while (!async.isDone)
+        {
+            LoadingUi.SetActive(true);
+            if(async.progress == 1)
+            {
+                
+            }
+            yield return null;
+        }
     }
 
     void ClearSceneChange(string Name)

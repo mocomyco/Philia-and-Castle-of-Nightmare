@@ -136,7 +136,9 @@
     <None Include="Assets\JMO Assets\Toony Colors\Shaders 2.0\Rim Lighting.shader" />
     <None Include="Assets\JMO Assets\Toony Colors\Shaders 2.0\Rim Outline.shader" />
     <None Include="Assets\NewClearScene\Standard Assets\Effects\ImageEffects\Shaders\BlurEffectConeTaps.shader" />
+    <None Include="Assets\NewImageEffectShader.shader" />
     <None Include="Assets\README_SD_KohakuChanz.txt" />
+    <None Include="Assets\Textures\gazo\Scroll.shader" />
     <None Include="Assets\UnityChan\Models\UnityChanShader\Shader\Unitychan_chara_akarami_blend.shader" />
     <None Include="Assets\UnityChan\Models\UnityChanShader\Shader\Unitychan_chara_eye.shader" />
     <None Include="Assets\UnityChan\Models\UnityChanShader\Shader\Unitychan_chara_eye_blend.shader" />

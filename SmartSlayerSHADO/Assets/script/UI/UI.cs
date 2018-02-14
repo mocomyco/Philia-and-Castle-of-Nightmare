@@ -26,6 +26,7 @@ public class UI : MonoBehaviour
  
 
     public int tutorial;
+
     enum StateCTRL
     {
         ENTER,
@@ -36,6 +37,8 @@ public class UI : MonoBehaviour
         TIMESCROLL,
         STAND_BY,
     }
+    [SerializeField]
+    [Header("今のState")]
     private StateCTRL stateCTRL;
 
     void Awake()
@@ -54,7 +57,7 @@ public class UI : MonoBehaviour
 
     void Update()
     {
-        Debug.Log(stateCTRL);
+      
         switch (stateCTRL)
         {
             case StateCTRL.ENTER:

@@ -14,6 +14,9 @@ public class SpecialAttackAnimTrigger : MonoBehaviour {
     [SerializeField]
     [Header("フィリアのSPゲージ")]
     private SP_Gauge _SP_Gauge;
+
+    [SerializeField]
+    [Header("GameSystem")]
     private GameSystem _GameSystem;
 
     void StartGetComponent()
@@ -31,16 +34,23 @@ public class SpecialAttackAnimTrigger : MonoBehaviour {
     }
 
     /// <summary>
-    /// 必殺処理が終わった時に必ず呼び出す
+    /// 必殺技のインスタンス
     /// </summary>
     public void SpecialAttack()
     {
-        _GameSystem.SendMessage("sp");
         // _SpecialAttack.Play();
         _SP_Gauge.SendMessage("InstansSpAttack");
+        Invoke("SpecialAttackEnd",2.5f);
     }
 
-    
+    /// <summary>
+    /// 必殺処理が終わった時に必ず呼び出す
+    /// </summary>
+    public void SpecialAttackEnd()
+    {
+        _GameSystem.SendMessage("sp");
+        StaticMaster.SP_AttackUse =false;
+    }
     
     //public void SpecialSE()
     //{

@@ -47,6 +47,9 @@ public class GameSystem : MonoBehaviour
     private int _Philia_LifePoint　= 3;//固定値
     private Image[] _Philia_LifeImage = new Image[3];
 
+    [Header("SPの攻撃範囲")]
+    public GameObject _SpAttackRange;
+
     //2018/02/02小林追加
     public GameObject ScoreCount;
     enum StateCTRL
@@ -105,7 +108,7 @@ public class GameSystem : MonoBehaviour
 
     void Update()
     {
-       
+        SpAttackRange();
         switch (stateCTRL)
         {
             case StateCTRL.STARTENEMY:
@@ -119,6 +122,7 @@ public class GameSystem : MonoBehaviour
             case StateCTRL.MAINIDLE:
                 StaticEnum("MAINIDLE");
                 MainIdle();
+                
                 break;
             case StateCTRL.MAINMOVE:
                 StaticEnum("MAINMOVE");
@@ -149,18 +153,21 @@ public class GameSystem : MonoBehaviour
                 break;
         }
 
-        if (GameOverWindow[0].activeSelf == true && stateCTRL != StateCTRL.WINDOW)
+        if (GameOverWindow[0])
         {
-            ui.SendMessage("DAMAGE_OUT");
-            Player.transform.position = P_Save;
-            CameraObj.transform.position = C_Save;
-            for (int i = 0; i < Enemy.Count; i++)
+            if (GameOverWindow[0].activeSelf == true && stateCTRL != StateCTRL.WINDOW)
             {
-                enemyMove = Enemy[i].GetComponent<EnemyMove>();
-                enemyMove.SendMessage("MoveReset");
+                ui.SendMessage("DAMAGE_OUT");
+                Player.transform.position = P_Save;
+                CameraObj.transform.position = C_Save;
+                for (int i = 0; i < Enemy.Count; i++)
+                {
+                    enemyMove = Enemy[i].GetComponent<EnemyMove>();
+                    enemyMove.SendMessage("MoveReset");
+                }
+                if (StartWindow != null) stateCTRL = StateCTRL.WINDOW;
+                else stateCTRL = StateCTRL.MAINIDLE;
             }
-            if (StartWindow != null) stateCTRL = StateCTRL.WINDOW;
-            else stateCTRL = StateCTRL.MAINIDLE;
         }
 
         for (int i = 0; i < Enemy.Count; i++)
@@ -375,7 +382,8 @@ public class GameSystem : MonoBehaviour
         StaticMaster.a -= scoreTesu.overBlue;
         StaticMaster.b -= scoreTesu.overRed;
         StaticMaster.c -= scoreTesu.overYellow;
-        SceneChange.SendMessage("ClearSceneChange", ClearSceneName);
+        // SceneChange.SendMessage("ClearSceneChange", ClearSceneName);
+        Debug.Log("Clear!!");
     }
 
     void P_Move(int Num)//プレイヤーの移動先
@@ -574,6 +582,12 @@ public class GameSystem : MonoBehaviour
             }
         }
 
+    }
+
+    void SpAttackRange()
+    {
+        if(StaticMaster.SP_Full == true)_SpAttackRange.SetActive(true);
+        else _SpAttackRange.SetActive(false);
     }
 
     void damage()

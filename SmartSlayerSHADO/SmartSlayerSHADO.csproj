@@ -131,6 +131,11 @@
     <Compile Include="Assets\Sound\SE\new\Emergency.cs" />
     <Compile Include="Assets\Sound\SE\new\PizaconCarsol.cs" />
     <Compile Include="Assets\Sound\SE\new\Sekkin.cs" />
+    <Compile Include="Assets\Textures\gazo\BackgroundController.cs" />
+    <Compile Include="Assets\Textures\tuto\GazaAnimScene.cs" />
+    <Compile Include="Assets\Textures\tuto\TapToSelect.cs" />
+    <Compile Include="Assets\Textures\tuto\TitleFile.cs" />
+    <Compile Include="Assets\Textures\tuto\gif.cs" />
     <Compile Include="Assets\TutoEnd.cs" />
     <Compile Include="Assets\fillia\SpecialAttackAnimTrigger.cs" />
     <Compile Include="Assets\script\CreateBoard.cs" />
@@ -189,7 +194,9 @@
     <None Include="Assets\JMO Assets\Toony Colors\Shaders 2.0\Rim Lighting.shader" />
     <None Include="Assets\JMO Assets\Toony Colors\Shaders 2.0\Rim Outline.shader" />
     <None Include="Assets\NewClearScene\Standard Assets\Effects\ImageEffects\Shaders\BlurEffectConeTaps.shader" />
+    <None Include="Assets\NewImageEffectShader.shader" />
     <None Include="Assets\README_SD_KohakuChanz.txt" />
+    <None Include="Assets\Textures\gazo\Scroll.shader" />
     <None Include="Assets\UnityChan\Models\UnityChanShader\Shader\Unitychan_chara_akarami_blend.shader" />
     <None Include="Assets\UnityChan\Models\UnityChanShader\Shader\Unitychan_chara_eye.shader" />
     <None Include="Assets\UnityChan\Models\UnityChanShader\Shader\Unitychan_chara_eye_blend.shader" />

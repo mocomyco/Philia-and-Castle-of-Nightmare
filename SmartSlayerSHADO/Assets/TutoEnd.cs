@@ -58,6 +58,7 @@ public class TutoEnd : MonoBehaviour
 
         //    tutoClear[1].enabled = false;
         //}
+        StaticMaster.tutorial = false;
         sChange.SendMessage("SceneChange");
     }
 }

@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 96c4e62600a8b204ea80b2ba21ac99da
+timeCreated: 1518521660
+licenseType: Free
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences:
+  - _BackGround: {fileID: 21300000, guid: 48c9863e04f461b4d85c4c4f34ec1ffb, type: 3}
+  - _Firia: {fileID: 21300000, guid: 143d3361fd708b940b2d20c9b06b746b, type: 3}
+  - _Title: {fileID: 21300000, guid: ebe408dac0c7fe74181277dcf303cb68, type: 3}
+  - _TapToStart: {fileID: 21300000, guid: 63d290f522c77d64eae8cd1e31586354, type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

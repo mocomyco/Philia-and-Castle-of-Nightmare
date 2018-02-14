@@ -101,7 +101,7 @@ public class scoreTesu : MonoBehaviour {
         {
             tesutext.text = "" + -1 * (StaticMaster.tesu - tesu);
         }
-		scoretext.text = "SCORE:"+ NowS;
+		if(scoretext)scoretext.text = "SCORE:"+ NowS;
 	}
 
     public int Score(int EnemyNum, int E_All, int S_All, string EnemyColor, int EnemyPar, int Par)

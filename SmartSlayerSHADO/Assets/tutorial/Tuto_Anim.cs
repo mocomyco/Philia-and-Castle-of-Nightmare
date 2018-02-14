@@ -7,10 +7,20 @@ public class Tuto_Anim : MonoBehaviour {
  
     public Tuto_States tutosute;
     public Image SpGauge;
-
+    /// <summary>
+    /// うまくいかないのでテスト
+    /// </summary>
+    public float fill;
     void Start()
     {
-        SpGauge.fillAmount = 1;
+        SpGauge.fillAmount = 1.0f;
+        fill = 1.0f;
+        
+    }
+
+    void Update()
+    {
+        SpGauge.fillAmount = fill;
     }
 
     void End()
